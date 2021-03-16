@@ -1,51 +1,8 @@
 @import url('https://fonts.googleapis.com/css?family=Josefin+Sans');
 /*! minireset.css v0.0.2 | MIT License | github.com/jgthms/minireset.css */
-html,
-body,
-p,
-ol,
-ul,
-li,
-dl,
-dt,
-dd,
-blockquote,
-figure,
-fieldset,
-legend,
-textarea,
-pre,
-iframe,
-hr,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6{margin:0;padding:0}
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {font-size:100%;font-weight:normal}
-ul{list-style:none}
-button,
-input,
-select,
-textarea {margin:0}
 html {box-sizing:border-box}
 *{box-sizing:inherit}
-*:before,*:after{box-sizing:inherit}
-img,
-embed,
-object,
-audio,
-video{height:auto;max-width:100%}
-iframe{border:0}
-table{border-collapse:collapse;border-spacing:0}
-td,th{padding:0;text-align:left}
 
 :root {
   --board: 95;
@@ -82,6 +39,53 @@ body {
   place-items: center;
   background-color: #fff;
 } */
+/* 
+@keyframes spin45 {
+  0% {
+    transform: rotate(45deg);
+ }
+}
+@keyframes spin-45 {
+  0% {
+    transform: rotate(-45deg);
+ }
+}
+@keyframes spin135 {
+  0% {
+    transform: rotate(135deg);
+ }
+}
+@keyframes spin-135 {
+  0% {
+    transform: rotate(-135deg);
+ }
+}
+.board-wrapper {
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -60%) scale(0.9) rotateX(60deg) rotateZ(55deg);
+  width: 868px;
+  height: 868px;
+  box-shadow: 4px 2px 10px 0px rgba(46, 70, 77, 0.2);
+
+  animation-duration: 20s;
+  animation-name: rotate;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+@keyframes rotate {
+  from {
+    transform: translate(-50%, -60%) scale(0.9) rotateX(60deg) rotateZ(55deg);
+    box-shadow: 4px 2px 10px 0px rgba(46, 70, 77, 0.2);
+ }
+  to {
+    transform: translate(-50%, -60%) scale(0.9) rotateX(60deg) rotateZ(415deg);
+    box-shadow: -4px 2px 10px 0px rgba(46, 70, 77, 0.2);
+ }
+} */
+
 .board-wrapper {
   display: grid;
   place-items: center;

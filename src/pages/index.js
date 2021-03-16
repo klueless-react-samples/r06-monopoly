@@ -1,3 +1,3 @@
 export * from './Home'
-export * from './Configure'
+export * from './Players'
 export * from './Monopoly'
