@@ -1,6 +1,6 @@
 import { React } from 'react';
 import { Switch, Route } from 'react-router-dom';
-import { Home, Configure, Monopoly } from '../pages';
+import { Home, Players, Monopoly } from '../pages';
 import { Content } from '.';
 
 export function Routes() {
@@ -12,8 +12,8 @@ export function Routes() {
       <Route path="/monopoly">
         <Monopoly />
       </Route>
-      <Route path="/configure">
-        <Configure />
+      <Route path="/players">
+        <Players />
       </Route>
       <Route>
         <Content title="Page not found" description="Please use the menu above" />
