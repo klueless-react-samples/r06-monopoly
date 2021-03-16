@@ -6,7 +6,7 @@ As a Monopoly Player, I want a beautiful UX to play monopoly on, so that I am an
 
 ## Screenshots
 
-![Before](shot 'Before screenshot')
+![Before](shot.png 'Before screenshot')
 
 ## Development
 
