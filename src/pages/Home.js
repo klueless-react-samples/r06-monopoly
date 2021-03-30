@@ -1,25 +1,30 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState, useEffect, useContext } from 'react'
 
 import { getSessionItem } from '../service/storage'
 
 import { Content } from '../components';
 
+import { MonopolyContext } from '../context/MonopolyContext';
+
 export function Home() {
 
-  const [perspective, setPerspective] = useState('2d');
+  const monopoly = useContext(MonopolyContext);
+
+  // const [perspective, setPerspective] = useState('2d');
 
   useEffect(() => {
     let value = getSessionItem('perspective');
     console.log(value);
 
-    setPerspective(value);
+    // setPerspective(value);
   }, []);
 
   return (
     <div className='container'>
       <Content title='Home' description='Welcome to Monopoly, click on the Monopoly link to play'></Content>
 
-      <h2>Perspective: {perspective}</h2>
+      {/* <h2>Perspective: {perspective}</h2> */}
+      <h2>Perspective: {monopoly.format}</h2>
       
       <h3>Features</h3>
       <ul>

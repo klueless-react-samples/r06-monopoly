@@ -1,5 +1,6 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import { setSessionItem } from '../service/storage'
+import { MonopolyContext } from '../context/MonopolyContext';
 
 import { Link } from 'react-router-dom';
 import logo from '../logo.svg';
@@ -8,6 +9,9 @@ import './Header.css';
 
 export function Header() {
 
+  // const { format, updateFormat } = useContext(MonopolyContext);
+  const { format, setFormat } = useContext(MonopolyContext);
+
   function onButtonClick(value) {
     saveLabel(value);
   }
@@ -15,6 +19,7 @@ export function Header() {
   function saveLabel(value) {
     console.log('value', value);
     setSessionItem("perspective", value);
+    setFormat(value);
   }
 
   return (
