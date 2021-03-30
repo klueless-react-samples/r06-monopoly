@@ -34,11 +34,6 @@ export function Home() {
       <li>Use SASS</li>
       <li>Use 3D Camera</li>
       </ul>
-
-      <h3>ToDo: Fix</h3>
-      <ul>
-      <li>Why doesn't the read-only perspective update on screen when I click the perspective button</li>
-      </ul>
     </div>
   )
 }
